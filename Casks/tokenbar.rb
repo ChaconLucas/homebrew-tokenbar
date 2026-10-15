@@ -1,6 +1,6 @@
 cask "tokenbar" do
-  version "0.4.2"
-  sha256 "66d2628be31cccbd4e5e412503cd7d767da2827ea3139bd88897aaf028fa9a7f"
+  version "0.4.3"
+  sha256 "d5cec64ca492308eb92ee60f7ef0290b6675e78583bec65f6a3de34e0c0946b8"
 
   url "https://github.com/ChaconLucas/tokenbar/releases/download/v#{version}/TokenBar-macOS.zip"
   name "TokenBar"
