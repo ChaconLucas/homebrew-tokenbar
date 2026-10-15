@@ -13,11 +13,12 @@ cask "tokenbar" do
   end
 
   auto_updates true
-  depends_on macos: ">= :sequoia"
+  depends_on macos: :sequoia
 
   app "TokenBar.app"
 
   # O app ainda não é autenticado pela Apple: sem isso o macOS bloqueia a primeira abertura.
+  # O Homebrew avisa que `postflight` vai mudar, mas ainda não há passo declarativo para isso.
   postflight do
     system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{appdir}/TokenBar.app"]
   end
